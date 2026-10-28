@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="DC Cherusker Detmold – Darts, Teamgeist und Leidenschaft.">
+  <title>DC Cherusker | Dartclub Detmold</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Hauptnavigation">
+      <a href="#home" class="brand" aria-label="DC Cherusker Startseite">
+        <img src="img/logo.png" alt="DC Cherusker Logo">
+        <span><strong>DC CHERUSKER</strong><small>DETMOLD</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Start</a>
+        <a href="#league" class="nav-link">Liga</a>
+        <a href="#contact" class="nav-link nav-contact">Mitmachen ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <p class="hero-description reveal">Willkommen beim DC Cherusker</p>
+            <h1 class="hero-title">
+            <span class="title-line">
+                <span>WIR SIND</span>
+            </span>
+            <span class="title-line yellow">
+                <span class="typewriter-wrapper">
+                <span id="typewriter">CHERUSKER.</span>
+                <span class="typewriter-cursor" aria-hidden="true"></span>
+                </span>
+            </span>
+            </h1>
+          <div class="hero-buttons reveal">
+            <a href="https://rsv-detmold-kluet.de/" class="btn btn-primary magnetic">UNSER VEREIN <span>↗</span></a>
+            <a href="#league" class="btn btn-outline magnetic">ZUR LIGA <span>↓</span></a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="logo-halo"></div>
+          <div class="logo-ring"></div>
+          <img src="img/logo.png" alt="" class="hero-logo">
+        </div>
+      </div>
+      <div class="hero-bottom container"><a href="#league" class="scroll-indicator" aria-label="Zur Liga scrollen"><span>↓</span></a></div>
+    </section>
+
+    <section class="section league" id="league">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-index">LIGABETRIEB</span>
+          <h2>IMMER AM <br><em>BALL. ÄH, DART.</em></h2>
+          <p>Beide Ligen auf einen Blick.</p>
+        </div>
+        <div class="league-grid">
+            <article class="league-card reveal">
+            <div class="card-top">
+                <span class="card-number">NWDV</span>
+            </div>
+
+            <h3>NWDV LIGATABELLE</h3>
+            <p></p>
+            <div class="iframe-wrapper">
+                <iframe src="https://portal.3k-darts.com/frontend/events/10/event/1570/table"
+                    title="NWDV Ligatabelle" loading="lazy"></iframe>
+            </div>
+            </article>
+            <article class="league-card reveal">
+            <div class="card-top">
+                <span class="card-number">OWL</span>
+            </div>
+
+            <h3>OWL LIGATABELLE</h3>
+            <p></p>
+            <div class="iframe-wrapper">
+                <iframe src="https://portal.3k-darts.com/frontend/events/5/event/29567/table"
+                    title="OWL Ligatabelle" loading="lazy"></iframe>
+            </div>
+            </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="join-section" id="contact">
+      <div class="join-orbit" aria-hidden="true"></div>
+      <div class="container join-content reveal">
+        <span class="section-index">02 / MITMACHEN</span>
+        <h2>READY TO<br><span>JOIN US?</span></h2>
+        <p>Du hast Lust auf Darts, spannende Matches und ein starkes Team? Dann melde dich bei uns!</p>
+        <div class="join-buttons">
+          <a href="mailto:kontakt@beispiel.de" class="btn btn-dark magnetic">KONTAKT AUFNEHMEN <span>↗</span></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="btn btn-yellow-outline magnetic">INSTAGRAM <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand"><img src="img/logo.png" alt="DC Cherusker Logo"><div><strong>DC CHERUSKER</strong><span>DETMOLD</span></div></div>
+        <div class="footer-nav"><a href="#home">Start</a><a href="#league">Liga</a><a href="#contact">Kontakt</a></div>
+      </div>
+      <div class="footer-bottom"><span>© <span id="year"></span> DC CHERUSKER DETMOLD</span><span>BUILT WITH PASSION &amp; PRECISION.</span></div>
+    </div>
+  </footer>
+</body>
+</html>
